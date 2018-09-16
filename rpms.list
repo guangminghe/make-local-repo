@@ -1,0 +1,58 @@
+# From: OpenStack Installation Tutorial for Red Hat Enterprise Linux and CentOS: https://docs.openstack.org/ocata/install-guide-rdo/
+# To: https://docs.openstack.org/ocata/install-guide-rdo/horizon-verify.html
+
+# ntp
+chrony
+
+# environment-packages
+centos-release-openstack-ocata
+python-openstackclient
+openstack-selinux
+
+# environment-sql-database
+mariadb
+mariadb-server
+python2-PyMySQL
+
+# environment-messaging
+rabbitmq-server
+
+# environment-memcached
+memcached
+python-memcached
+
+# keystone-install
+openstack-keystone
+httpd mod_wsgi
+
+# glance-install
+openstack-glance
+
+# nova-controller-install
+openstack-nova-api
+openstack-nova-conductor
+openstack-nova-console
+openstack-nova-novncproxy
+openstack-nova-scheduler
+openstack-nova-placement-api
+
+# nova-compute-install
+openstack-nova-compute
+
+# neutron-controller-install-option1
+openstack-neutron
+openstack-neutron-ml2
+openstack-neutron-linuxbridge
+ebtables
+
+# neutron-controller-install-option2
+# Todo
+
+# neutron-compute-install
+openstack-neutron-linuxbridge
+ebtables
+ipset
+
+# horizon-install
+openstack-dashboard
+
